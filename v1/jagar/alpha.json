@@ -1,0 +1,479 @@
+{
+  "schemaVersion": 1,
+  "product": "SolOS",
+  "device": "jagar",
+  "channel": "alpha",
+  "updatedAt": "2026-10-19",
+  "releases": [
+    {
+      "version": "1.0.18-alpha.10.12",
+      "date": "2026-10-15",
+      "sections": [
+        {
+          "type": "new",
+          "title": "What's New",
+          "items": [
+            "Discover SolOS features with a new guided tutorial.",
+            "View notifications and music controls on the updated lock screen."
+          ]
+        },
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "Swipe inward from either screen edge to go back.",
+            "Take screenshots without a screen flash or shutter sound.",
+            "Enjoy a smoother taskbar and more reliable app switching.",
+            "See clearer Wi-Fi information and improved controls in Quick Settings.",
+            "Close the Note Overlay pad with a second upward swipe.",
+            "Automatic dark mode follows your local sunrise and sunset more accurately."
+          ]
+        },
+        {
+          "type": "fixes",
+          "title": "Bug Fixes",
+          "items": [
+            "Fixed cases where quick button presses could trigger the wrong action.",
+            "Fixed issues with taskbar taps and closing apps.",
+            "Removed unnecessary kids' app installers from the system image; apps already installed remain available."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.18-alpha.10.11",
+      "date": "2026-10-14",
+      "sections": [
+        {
+          "type": "important",
+          "title": "Important",
+          "items": [
+            "Notes stored in the previous Note Overlay app are not automatically imported into the new app in this release."
+          ]
+        },
+        {
+          "type": "new",
+          "title": "What's New",
+          "items": [
+            "Use the redesigned Note Overlay with the orange action button.",
+            "Customize supported hardware-button shortcuts in Settings.",
+            "Explore the redesigned lock screen."
+          ]
+        },
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "Enjoy a refreshed Quick Settings panel, including a better landscape layout and larger sliders.",
+            "See connected Wi-Fi and Bluetooth device names more clearly.",
+            "Use a smoother taskbar and more reliable swipe gestures after rotating the screen.",
+            "Adjust screen warmth and frontlight brightness with refined controls."
+          ]
+        },
+        {
+          "type": "fixes",
+          "title": "Bug Fixes",
+          "items": [
+            "Kindle can now update to the newer included version without losing its app data.",
+            "Fixed issues that could leave parts of Quick Settings faded or cause problems when Bluetooth device information was unavailable."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.18-alpha.10.10",
+      "date": "2026-10-13",
+      "sections": [
+        {
+          "type": "new",
+          "title": "What's New",
+          "items": [
+            "Get a connection notification when the Daylight keyboard case connects, including its battery level when available.",
+            "Check supported Bluetooth accessory battery levels in Settings.",
+            "Explore improved app switching and Mission Control."
+          ]
+        },
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "Adjust frontlight brightness more precisely with updated controls.",
+            "Use expanded hardware-button actions and shortcuts."
+          ]
+        },
+        {
+          "type": "fixes",
+          "title": "Bug Fixes",
+          "items": [
+            "Improved Bluetooth reliability for supported accessories.",
+            "Prepared Note Overlay for future app updates through the Daylight Store."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.18-alpha.10.9",
+      "date": "2026-10-12",
+      "sections": [
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "Updated the SolOS Home experience.",
+            "Improved the way the tablet returns to Home when app switching is interrupted."
+          ]
+        },
+        {
+          "type": "fixes",
+          "title": "Bug Fixes",
+          "items": [
+            "Fixed a crash that could occur if you returned Home before an app finished opening.",
+            "Fixed cases where app switching could leave a blank screen."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.18-alpha.10.8",
+      "date": "2026-10-09",
+      "sections": [
+        {
+          "type": "new",
+          "title": "What's New",
+          "items": [
+            "Try the updated SolOS Home and Quick Settings experience.",
+            "Use the redesigned compact taskbar for app navigation."
+          ]
+        },
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "Quick Settings stays accessible after initial setup.",
+            "Simplified Home navigation and streamlined the taskbar.",
+            "Updated the Home and HUD apps."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.18-alpha.10.7",
+      "date": "2026-10-08",
+      "sections": [
+        {
+          "type": "fixes",
+          "title": "Bug Fixes",
+          "items": [
+            "Fixed a critical startup issue affecting the previous alpha release.",
+            "Updated SolOS Home and Store compatibility."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.18-alpha.10.5",
+      "date": "2026-10-07",
+      "sections": [
+        {
+          "type": "new",
+          "title": "What's New",
+          "items": [
+            "Meet the refreshed SolOS Quick Settings and compact app-navigation experience.",
+            "Enjoy smoother screen transitions."
+          ]
+        },
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "Pen strokes no longer pull down Quick Settings while writing near the top of the screen.",
+            "Holding the orange button from sleep more reliably starts a snip.",
+            "Updated the included Kindle app for new installations.",
+            "Improved support for passkey sign-in."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.18-alpha.10.4",
+      "date": "2026-10-06",
+      "sections": [
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "Improved passkey sign-in using another device, including supported QR-code flows.",
+            "Updated the Daylight Store integration for app updates."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.18-alpha.10.3",
+      "date": "2026-09-30",
+      "sections": [
+        {
+          "type": "new",
+          "title": "What's New",
+          "items": [
+            "Added Daylight Store and Daylight Experiments to the system image."
+          ]
+        },
+        {
+          "type": "fixes",
+          "title": "Bug Fixes",
+          "items": [
+            "Fixed a welcome/setup card that could reappear after restarting the tablet.",
+            "Corrected the software version shown in Settings."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.18-alpha.10.2",
+      "date": "2026-09-28",
+      "sections": [
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "Improved the transition to SolOS Home after upgrading from older software.",
+            "Added Niagara Launcher as an optional launcher choice.",
+            "Updated Note Overlay with a fix for notes getting stuck while saving after moving a snip."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.18-alpha.10.1",
+      "date": "2026-09-25",
+      "sections": [
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "Improved orange-button and walkie-talkie behavior when waking the tablet.",
+            "Made the updated Alpha 10 fixes available through a distinct software update version."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.18-alpha.10",
+      "date": "2026-09-24",
+      "sections": [
+        {
+          "type": "new",
+          "title": "What's New",
+          "items": [
+            "Added an optional Stylus boost setting for more responsive pen interaction on supported display modes."
+          ]
+        },
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "Improved performance support for apps that request faster processing during active work.",
+            "Improved the reliability of SolOS Home after updating from older launcher versions."
+          ]
+        },
+        {
+          "type": "fixes",
+          "title": "Bug Fixes",
+          "items": [
+            "Fixed unwanted taskbar and screen flashes that could appear after startup.",
+            "Fixed several screenshot/snipping interface issues.",
+            "Fixed an issue that could leave a dark bar along the bottom of the screen.",
+            "Improved the reliability of the orange action button and walkie-talkie shortcuts."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.18-alpha.9",
+      "date": "2026-09-22",
+      "sections": [
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "Double-press the orange button to open the note pad more reliably, including when waking the tablet.",
+            "Improved the appearance of the Home screen after restarting or updating."
+          ]
+        },
+        {
+          "type": "fixes",
+          "title": "Bug Fixes",
+          "items": [
+            "Fixed the black bar and brief app-switching flashes that could appear during startup.",
+            "Removed an unnecessary Daylight Keys notification at startup.",
+            "Fixed clipping in the snip labeling controls.",
+            "Improved the consistency of display-setting resets immediately after an update."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.18-alpha.8.2",
+      "date": "2026-09-17",
+      "sections": [
+        {
+          "type": "fixes",
+          "title": "Bug Fixes",
+          "items": [
+            "Fixed an issue where the display size could reset after every restart instead of only after a software update."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.18-alpha.8",
+      "date": "2026-09-14",
+      "sections": [
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "Writing with the stylus near the edge of the screen is less likely to trigger navigation gestures accidentally.",
+            "Improved rejection of accidental touches from your resting palm while writing.",
+            "Improved double-press recognition for the power button."
+          ]
+        },
+        {
+          "type": "fixes",
+          "title": "Bug Fixes",
+          "items": [
+            "Removed a dark strip from the bottom of the first-time setup experience."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.18-alpha.7",
+      "date": "2026-09-11",
+      "sections": [
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "Press the orange button to wake the screen and open the note pad.",
+            "Updated Note Overlay and the Magic Ink experience."
+          ]
+        },
+        {
+          "type": "fixes",
+          "title": "Bug Fixes",
+          "items": [
+            "Fixed an issue where pressing the orange button while the tablet was asleep did not wake the screen."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.18-alpha.6",
+      "date": "2026-09-11",
+      "sections": [
+        {
+          "type": "new",
+          "title": "What's New",
+          "items": [
+            "Added Daylight account sign-in support during setup.",
+            "Improved Magic Ink and AI overlay functionality."
+          ]
+        },
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "Camera and microphone permissions are ready for supported video-calling apps installed from Google Play, while remaining adjustable in Settings."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.18-alpha.5",
+      "date": "2026-09-10",
+      "sections": [
+        {
+          "type": "fixes",
+          "title": "Bug Fixes",
+          "items": [
+            "Fixed voice labeling for screenshots and snips so it works without additional permission setup.",
+            "Removed an unwanted dark strip at the bottom of the Home screen."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.18-alpha.4",
+      "date": "2026-09-10",
+      "sections": [
+        {
+          "type": "new",
+          "title": "What's New",
+          "items": [
+            "Hold the orange button to take a snip.",
+            "Use Magic Ink and the walkie-talkie AI overlay with supported hardware buttons.",
+            "Hold a volume button to change screen brightness."
+          ]
+        },
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "Updated the Daylight View app."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.18-alpha.3",
+      "date": "2026-09-10",
+      "sections": [
+        {
+          "type": "fixes",
+          "title": "Bug Fixes",
+          "items": [
+            "Improved Zoom compatibility with supported external USB webcams."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.18-alpha.2",
+      "date": "2026-09-10",
+      "sections": [
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "The orange button opens the note pad without additional setup.",
+            "Note Overlay can appear over other apps as intended."
+          ]
+        },
+        {
+          "type": "fixes",
+          "title": "Bug Fixes",
+          "items": [
+            "Fixed an issue where accessibility services could become disabled after restarting."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.18-alpha.1",
+      "date": "2026-09-09",
+      "sections": [
+        {
+          "type": "new",
+          "title": "What's New",
+          "items": [
+            "Introduced Note Overlay as part of SolOS.",
+            "Added initial support for orange-button note shortcuts.",
+            "Added a power-button double-press shortcut for Kindle."
+          ]
+        }
+      ]
+    }
+  ]
+}

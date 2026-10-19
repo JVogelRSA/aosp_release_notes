@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/makedaylight/aosp_release_notes/main/schema/release-notes.v1.schema.json",
+  "title": "SolOS release notes, v1",
+  "description": "Customer-facing release notes for one device and channel, read by Software Updater. Additive changes (new optional fields, new section types) keep schemaVersion 1; anything that breaks old readers goes under v2/.",
+  "type": "object",
+  "required": ["schemaVersion", "product", "device", "channel", "updatedAt", "releases"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "product": { "type": "string", "minLength": 1 },
+    "device": {
+      "description": "ro.product.device of the devices this file is for; must match the folder name.",
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "channel": {
+      "description": "Must match the file name.",
+      "enum": ["alpha", "beta", "stable"]
+    },
+    "updatedAt": { "type": "string", "format": "date" },
+    "releases": {
+      "description": "Newest first. Only builds that are, or were, offered to devices.",
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/release" }
+    }
+  },
+  "$defs": {
+    "release": {
+      "type": "object",
+      "required": ["version", "date", "sections"],
+      "properties": {
+        "version": {
+          "description": "ro.mediatek.version.release without the trailing -<firmware build> number, e.g. 1.0.18-alpha.10.12.",
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+(-[0-9A-Za-z.]+)?$"
+        },
+        "date": { "type": "string", "format": "date" },
+        "title": {
+          "description": "Optional headline shown above the sections.",
+          "type": "string",
+          "minLength": 1
+        },
+        "sections": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/section" }
+        }
+      }
+    },
+    "section": {
+      "type": "object",
+      "required": ["type", "title", "items"],
+      "properties": {
+        "type": {
+          "description": "Known types are shown in the order important, new, improvements, fixes. Unknown types are shown after them, under their title.",
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "title": { "type": "string", "minLength": 1 },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}
