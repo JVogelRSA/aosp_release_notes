@@ -6,6 +6,88 @@
   "updatedAt": "2026-10-19",
   "releases": [
     {
+      "version": "1.0.18-alpha.10.15",
+      "date": "2026-10-16",
+      "sections": [
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "See refreshed welcome and setup-complete screens, with smoother animations, illustrated scenery and larger rounded buttons."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.18-alpha.10.14",
+      "date": "2026-10-16",
+      "sections": [
+        {
+          "type": "important",
+          "title": "Important",
+          "items": [
+            "After this update, your tablet returns to the Home space once; your previous spaces are backed up.",
+            "Magic Ink is temporarily turned off in this release."
+          ]
+        },
+        {
+          "type": "new",
+          "title": "What's New",
+          "items": [
+            "Open Quick Settings directly from the lock screen."
+          ]
+        },
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "Learn more from expanded tutorials covering the Home screen, taskbar and hardware buttons.",
+            "See your app shortcuts as soon as the taskbar opens.",
+            "Swipe in from the left edge to go back, leaving the right edge free for gestures inside apps.",
+            "Get clearer guidance for the Amber slider and taskbar gestures.",
+            "See refreshed Home screen visuals and smoother animations."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.18-alpha.10.13",
+      "date": "2026-10-16",
+      "sections": [
+        {
+          "type": "important",
+          "title": "Important",
+          "items": [
+            "This update removes the previous Note Overlay app and deletes the notes stored in it; its daily backups stay in Download/Note Overlay 3/Backups.",
+            "Updates marked for automatic installation may now install and restart your tablet during the day, not only overnight."
+          ]
+        },
+        {
+          "type": "new",
+          "title": "What's New",
+          "items": [
+            "Alpha tablets can now check for and install selected updates automatically."
+          ]
+        },
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "See a refreshed design in Software Update.",
+            "Use the updated Daylight View, with its accessibility support turned on automatically after updating."
+          ]
+        },
+        {
+          "type": "fixes",
+          "title": "Bug Fixes",
+          "items": [
+            "Fixed two note overlays running at once; only the new Note Overlay app is now included.",
+            "Fixed a Play Protect “App scan recommended” prompt appearing when the Daylight Store installs or updates Daylight's own apps; other apps are still checked as usual."
+          ]
+        }
+      ]
+    },
+    {
       "version": "1.0.18-alpha.10.12",
       "date": "2026-10-15",
       "sections": [
