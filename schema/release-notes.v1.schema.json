@@ -15,7 +15,7 @@
     },
     "channel": {
       "description": "Must match the file name.",
-      "enum": ["alpha", "beta", "stable"]
+      "enum": ["alpha", "stable"]
     },
     "updatedAt": { "type": "string", "format": "date" },
     "releases": {

@@ -55,12 +55,16 @@ It keeps the last good copy, so devices that loaded the notes once can still see
 
 ## Adding a release
 
-1. Add the release at the top of `releases` in `v1/<device>/<channel>.json`, and set
-   `updatedAt` to today.
-2. Write for customers: say what changed for them, in plain language. Leave out internal
-   ticket numbers, code names and builds that were never offered to devices.
+`AGENTS.md` has the full process for turning raw notes (commit logs, tickets, an engineering
+changelog) into published entries: what to keep, what to drop and how to word it. It's written
+so an LLM can follow it: hand the raw notes to Claude Code or another agent in this repo and it
+picks the guide up automatically. People can follow the same steps by hand.
+
+1. Put raw notes under `drafts/` (ignored by git) or paste them into the chat.
+2. Add the release to `v1/<device>/<channel>.json` as `AGENTS.md` describes.
 3. Run `scripts/validate.py`. CI runs it on every pull request and on `main`.
-4. Open a pull request and get it reviewed. Merging publishes it.
+4. Open a pull request and get it reviewed, including the list of dropped items. Merging
+   publishes it.
 
 Builds pulled before or after release aren't listed. For example, 1.0.18-alpha.10.6 was
 superseded by 1.0.18-alpha.10.7, and 1.0.18-alpha.8.1 by 1.0.18-alpha.8.2.

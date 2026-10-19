@@ -15,7 +15,8 @@ import re
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-CHANNELS = {"alpha", "beta", "stable"}
+# The only channels Software Updater reads.
+CHANNELS = {"alpha", "stable"}
 VERSION = re.compile(r"^\d+\.\d+\.\d+(-[0-9A-Za-z.]+)?$")
 DEVICE = re.compile(r"^[a-z0-9_]+$")
 SECTION_TYPE = re.compile(r"^[a-z][a-z0-9_]*$")
