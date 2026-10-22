@@ -3,8 +3,59 @@
   "product": "SolOS",
   "device": "jagar",
   "channel": "alpha",
-  "updatedAt": "2026-10-19",
+  "updatedAt": "2026-10-22",
   "releases": [
+    {
+      "version": "1.0.18-alpha.10.17",
+      "date": "2026-10-19",
+      "sections": [
+        {
+          "type": "new",
+          "title": "What's New",
+          "items": [
+            "Set a button shortcut to open the AI overlay."
+          ]
+        },
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "See a redesigned Settings app in the SolOS style."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.18-alpha.10.16",
+      "date": "2026-10-19",
+      "sections": [
+        {
+          "type": "important",
+          "title": "Important",
+          "items": [
+            "Daylight View is not included in this release."
+          ]
+        },
+        {
+          "type": "new",
+          "title": "What's New",
+          "items": [
+            "Set a button shortcut to switch back to your previous app."
+          ]
+        },
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "Read the release notes in a window inside Software Update, with your installed version marked, instead of on a web page.",
+            "Turn the light back on with a button shortcut and it returns to its last brightness.",
+            "Tap the icons at either end of the Quick Settings sliders to adjust them.",
+            "See the last stretch of the Amber slider marked with a notch, and hear a distinct sound at full Amber and at the lowest light.",
+            "Follow the tutorial's taskbar lesson more easily, with only the lesson's app on the taskbar and your Home screen behind it."
+          ]
+        }
+      ]
+    },
     {
       "version": "1.0.18-alpha.10.15",
       "date": "2026-10-16",
