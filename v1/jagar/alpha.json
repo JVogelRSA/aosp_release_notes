@@ -3,8 +3,62 @@
   "product": "SolOS",
   "device": "jagar",
   "channel": "alpha",
-  "updatedAt": "2026-10-22",
+  "updatedAt": "2026-10-26",
   "releases": [
+    {
+      "version": "1.0.18-alpha.10.22",
+      "date": "2026-10-26",
+      "sections": [
+        {
+          "type": "new",
+          "title": "What's New",
+          "items": [
+            "Get a notice when an update is ready, with Remind me later and View update buttons.",
+            "Choose an analog clock face for the lock screen under Customization in Home.",
+            "Press and hold an app on the taskbar to open it in split screen, and swap the two apps with Change order.",
+            "Choose the day your week starts on for the calendar in mission control.",
+            "Switch apps with a sideways swipe along the bottom edge after turning on app-switch swipes under Experimental in Home; several fast swipes in a row keep switching.",
+            "Hold an app in the sidebar to see its quick actions.",
+            "Turn split screen on or off under Customization in Home.",
+            "Uninstall Niagara, Markup, Exchange and Reader if you don't use them; a factory reset brings them back."
+          ]
+        },
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "Confirm before Software Update installs an update you started and restarts your tablet.",
+            "See a short message while an update installs and restarts your tablet, and a note with the new version afterwards.",
+            "Press the power button once to put your tablet to sleep right away.",
+            "Double-press the power button while your tablet is asleep to open Kindle straight away, over the lock screen.",
+            "Drag the Quick Settings sliders to change them; a tap no longer makes them jump.",
+            "See the lock screen in two columns, clock and notifications side by side, when your tablet is on its side.",
+            "See a thinner split-screen divider that follows dark mode.",
+            "See app icons keep their solid shapes in dark mode, and the Logos app its own icon.",
+            "Scroll the A to Z app list and return to Home more smoothly.",
+            "See during setup when a Wi-Fi network needs a sign-in or has no internet."
+          ]
+        },
+        {
+          "type": "fixes",
+          "title": "Bug Fixes",
+          "items": [
+            "Fixed a USB message that kept coming back, and file transfer stopping, while Daylight Link runs on a connected computer.",
+            "Fixed Settings feeling slow; its pages open full screen again.",
+            "Fixed Release Notes not opening from Software Update.",
+            "Fixed Google Meet getting stuck on a loading screen during its first-time setup.",
+            "Fixed “Unlock for all features” appearing on the lock screen after a restart.",
+            "Fixed the lock screen picture flashing after you enter your PIN; the screen now fades into Home.",
+            "Fixed the tutorial's app picker not showing all of your apps.",
+            "Fixed a resting palm on the bottom edge opening the taskbar or switching apps while you write.",
+            "Fixed apps shifting when you swipe up from the bottom edge; the pen still writes there and taps still reach the app.",
+            "Fixed the Auto theme staying dark after sunrise when you wake your tablet.",
+            "Fixed the orange button opening Note Overlay over the lock screen when pressed while your tablet is asleep or locked.",
+            "Fixed split screen breaking when an app opens over the lock screen, such as Kindle from the power button; the pair comes back when you unlock."
+          ]
+        }
+      ]
+    },
     {
       "version": "1.0.18-alpha.10.17",
       "date": "2026-10-19",
