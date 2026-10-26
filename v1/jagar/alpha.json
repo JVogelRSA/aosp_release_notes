@@ -20,85 +20,57 @@
           "type": "new",
           "title": "What's New",
           "items": [
-            "Set your own photo as the wallpaper with Choose photo or video under Customization in Home.",
-            "Open the tutorial's lessons straight from the new Tutorial app in your app list."
+            "Split screen mode: press and hold an app on the taskbar to open it next to the one you're using, then tap Change order to swap sides.",
+            "Add websites to Home screen: use “Add to Home screen” in Chrome, Firefox or another browser to add a page to your app list, and hold it to remove it.",
+            "Revised taskbar: apps are right-aligned, a more responsive flick-up gesture closes an app, and closing the current app goes to Home instead of the next app.",
+            "Kindle on the power button: double-press the power button to open Kindle, even when the screen is locked; change this in Key Mapper.",
+            "Analog lock screen clocks: choose Plain, Flare, Window or Day in Customization > Wallpaper.",
+            "Your own wallpaper: tap Choose photo or video in Customization > Wallpaper.",
+            "Tutorial app: open Tutorial from your app list to go through the SolOS tutorial again.",
+            "Sidebar shortcuts: hold an app in the sidebar to see its shortcuts; you can still drag it to move it.",
+            "Adjustable start of the week: choose which day the week starts on in the mission control calendar.",
+            "Update notice: when an update is ready, a notice offers Remind me later and View update.",
+            "Preinstalled apps: apps you uninstall now stay uninstalled, and Niagara, Markup, Exchange and Reader can now be uninstalled too.",
+            "Quick swipe between apps (Experimental): swipe sideways along the bottom edge, the top edge or with five fingers to switch apps; it's off by default, so turn it on in Customization > Controls > Switch apps."
           ]
         },
         {
           "type": "improvements",
           "title": "Improvements",
           "items": [
-            "Double-press the power button while your tablet is awake, including on the lock screen, to open Kindle, as you can from sleep; a single press now puts your tablet to sleep after a brief pause.",
-            "See your taskbar apps lined up on the right.",
-            "Close taskbar apps one after another with a quick flick up, without a pause in between.",
-            "Keep the taskbar open, with Home behind it, when you close the app you were using.",
-            "See Settings in dark colors when dark mode is on."
+            "Add to sidebar adds several apps in one go, without reopening the menu.",
+            "The Home clock follows your 24-hour time setting and your chosen font.",
+            "The Brightness and Amber sliders change only when you drag them, to avoid accidental jumps; tap the icons at either end to adjust them a step at a time.",
+            "The Settings app is more responsive, and its pages open full screen again.",
+            "The Settings app follows dark mode.",
+            "In landscape mode, the lock screen shows the clock and notifications side by side.",
+            "Lock screen text is easier to read on any wallpaper.",
+            "App icons render better in grayscale.",
+            "Scrubbing through the A to Z letters is smoother.",
+            "Software Update asks before installing any update you start, and tells you when SolOS is updating and which version you're on afterwards.",
+            "Setup lets you show the password you typed, and tells you when a Wi-Fi network needs a sign-in or has no internet."
           ]
         },
         {
           "type": "fixes",
           "title": "Bug Fixes",
           "items": [
-            "Fixed your tablet sometimes restarting while you write with the pen, for example in Noteshelf.",
-            "Fixed included apps such as Chrome, Classroom and Kindle coming back after a restart or update once you had removed them.",
-            "Fixed Software Update closing unexpectedly in split screen.",
-            "Fixed the orange button waking your tablet from sleep without opening anything; it now leaves your tablet asleep, so wake your tablet first to take a snip.",
-            "Fixed the clock and date not using the font you chose under Customization in Home.",
-            "Fixed Home still showing its app list when you come back to it after opening an app."
-          ]
-        }
-      ]
-    },
-    {
-      "version": "1.0.18-alpha.10.22",
-      "date": "2026-10-23",
-      "sections": [
-        {
-          "type": "new",
-          "title": "What's New",
-          "items": [
-            "Get a notice when an update is ready, with Remind me later and View update buttons.",
-            "Choose an analog clock face for the lock screen under Customization in Home.",
-            "Press and hold an app on the taskbar to open it in split screen, and swap the two apps with Change order.",
-            "Choose the day your week starts on for the calendar in mission control.",
-            "Switch apps with a sideways swipe along the bottom edge after turning on app-switch swipes under Experimental in Home; several fast swipes in a row keep switching.",
-            "Hold an app in the sidebar to see its quick actions.",
-            "Turn split screen on or off under Customization in Home.",
-            "Uninstall Niagara, Markup, Exchange and Reader if you don't use them; a factory reset brings them back."
-          ]
-        },
-        {
-          "type": "improvements",
-          "title": "Improvements",
-          "items": [
-            "Confirm before Software Update installs an update you started and restarts your tablet.",
-            "See a short message while an update installs and restarts your tablet, and a note with the new version afterwards.",
-            "Press the power button once to put your tablet to sleep right away.",
-            "Double-press the power button while your tablet is asleep to open Kindle straight away, over the lock screen.",
-            "Drag the Quick Settings sliders to change them; a tap no longer makes them jump.",
-            "See the lock screen in two columns, clock and notifications side by side, when your tablet is on its side.",
-            "See a thinner split-screen divider that follows dark mode.",
-            "See app icons keep their solid shapes in dark mode, and the Logos app its own icon.",
-            "Scroll the A to Z app list and return to Home more smoothly.",
-            "See during setup when a Wi-Fi network needs a sign-in or has no internet."
-          ]
-        },
-        {
-          "type": "fixes",
-          "title": "Bug Fixes",
-          "items": [
-            "Fixed a USB message that kept coming back, and file transfer stopping, while Daylight Link runs on a connected computer.",
-            "Fixed Settings feeling slow; its pages open full screen again.",
+            "Fixed a palm rejection bug that could cause occasional crashes while writing with the pen.",
+            "Fixed file transfer stopping, and the USB message reappearing, while Daylight Link runs on a connected computer.",
+            "Fixed Settings closing when you open contactless payments.",
+            "Fixed Software Update closing when you open it in split screen.",
             "Fixed Release Notes not opening from Software Update.",
-            "Fixed Google Meet getting stuck on a loading screen during its first-time setup.",
-            "Fixed “Unlock for all features” appearing on the lock screen after a restart.",
-            "Fixed the lock screen picture flashing after you enter your PIN; the screen now fades into Home.",
-            "Fixed the tutorial's app picker not showing all of your apps.",
-            "Fixed a resting palm on the bottom edge opening the taskbar or switching apps while you write.",
-            "Fixed apps shifting when you swipe up from the bottom edge; the pen still writes there and taps still reach the app.",
-            "Fixed the Auto theme staying dark after sunrise when you wake your tablet.",
-            "Fixed the orange button opening Note Overlay over the lock screen when pressed while your tablet is asleep or locked.",
-            "Fixed split screen breaking when an app opens over the lock screen, such as Kindle from the power button; the pair comes back when you unlock."
+            "Fixed Google Meet getting stuck loading during its first-time setup.",
+            "Fixed the lock screen picture flashing after you enter your PIN; the screen now fades straight into Home.",
+            "Fixed a palm resting on the bottom edge opening the taskbar or switching apps while you write.",
+            "Fixed swiping up from the bottom edge to open the taskbar scrolling the open app.",
+            "Fixed Auto light/dark mode not switching when your tablet wakes from sleep.",
+            "Fixed the orange button waking your tablet or opening Note Overlay from sleep; wake your tablet first to use it, for example to take a snip.",
+            "Fixed Home showing the app list you left open when you come back to it.",
+            "Fixed a removed clock module not being addable back to the sidebar.",
+            "Fixed a Clear sidebar not staying clear in dark mode.",
+            "Fixed Setup's Wi-Fi step not recognizing the network you're already on.",
+            "Fixed pressing the power button during the tutorial putting your tablet to sleep."
           ]
         }
       ]
