@@ -42,7 +42,7 @@
             "Fixed your tablet sometimes restarting while you write with the pen, for example in Noteshelf.",
             "Fixed included apps such as Chrome, Classroom and Kindle coming back after a restart or update once you had removed them.",
             "Fixed Software Update closing unexpectedly in split screen.",
-            "Fixed the orange button waking your tablet from sleep without opening anything; it now leaves your tablet asleep.",
+            "Fixed the orange button waking your tablet from sleep without opening anything; it now leaves your tablet asleep, so wake your tablet first to take a snip.",
             "Fixed the clock and date not using the font you chose under Customization in Home.",
             "Fixed Home still showing its app list when you come back to it after opening an app."
           ]
