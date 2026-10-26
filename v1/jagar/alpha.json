@@ -3,8 +3,77 @@
   "product": "SolOS",
   "device": "jagar",
   "channel": "alpha",
-  "updatedAt": "2026-10-22",
+  "updatedAt": "2026-10-26",
   "releases": [
+    {
+      "version": "1.0.18-alpha.10.23",
+      "date": "2026-10-26",
+      "sections": [
+        {
+          "type": "important",
+          "title": "Important",
+          "items": [
+            "If your font in Home was Space Grotesk or split screen was turned off, this update switches the font to Original and turns split screen back on, once; you can change both again under Customization in Home."
+          ]
+        },
+        {
+          "type": "new",
+          "title": "What's New",
+          "items": [
+            "Split screen mode: press and hold an app on the taskbar to open it next to the one you're using, then tap Change order to swap sides.",
+            "Add websites to Home screen: use “Add to Home screen” in Chrome, Firefox or another browser to add a page to your app list, and hold it to remove it.",
+            "Revised taskbar: apps are right-aligned, a more responsive flick-up gesture closes an app, and closing the current app goes to Home instead of the next app.",
+            "Kindle on the power button: double-press the power button to open Kindle, even when the screen is locked; change this in Key Mapper.",
+            "Analog lock screen clocks: choose Plain, Flare, Window or Day in Customization > Wallpaper.",
+            "Your own wallpaper: tap Choose photo or video in Customization > Wallpaper.",
+            "Tutorial app: open Tutorial from your app list to go through the SolOS tutorial again.",
+            "Sidebar shortcuts: hold an app in the sidebar to see its shortcuts; you can still drag it to move it.",
+            "Adjustable start of the week: choose which day the week starts on in the mission control calendar.",
+            "Update notice: when an update is ready, a notice offers Remind me later and View update.",
+            "Preinstalled apps: apps you uninstall now stay uninstalled, and Niagara, Markup, Exchange and Reader can now be uninstalled too.",
+            "Quick swipe between apps (Experimental): swipe sideways along the bottom edge, the top edge or with five fingers to switch apps; it's off by default, so turn it on in Customization > Controls > Switch apps."
+          ]
+        },
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "Add to sidebar adds several apps in one go, without reopening the menu.",
+            "The Home clock follows your 24-hour time setting and your chosen font.",
+            "The Brightness and Amber sliders change only when you drag them, to avoid accidental jumps; tap the icons at either end to adjust them a step at a time.",
+            "The Settings app is more responsive, and its pages open full screen again.",
+            "The Settings app follows dark mode.",
+            "In landscape mode, the lock screen shows the clock and notifications side by side.",
+            "Lock screen text is easier to read on any wallpaper.",
+            "App icons render better in grayscale.",
+            "Scrubbing through the A to Z letters is smoother.",
+            "Software Update asks before installing any update you start, and tells you when SolOS is updating and which version you're on afterwards.",
+            "Setup lets you show the password you typed, and tells you when a Wi-Fi network needs a sign-in or has no internet."
+          ]
+        },
+        {
+          "type": "fixes",
+          "title": "Bug Fixes",
+          "items": [
+            "Fixed a palm rejection bug that could cause occasional crashes while writing with the pen.",
+            "Fixed Settings closing when you open contactless payments.",
+            "Fixed Software Update closing when you open it in split screen.",
+            "Fixed Release Notes not opening from Software Update.",
+            "Fixed Google Meet getting stuck loading during its first-time setup.",
+            "Fixed the lock screen picture flashing after you enter your PIN; the screen now fades straight into Home.",
+            "Fixed a palm resting on the bottom edge opening the taskbar or switching apps while you write.",
+            "Fixed swiping up from the bottom edge to open the taskbar scrolling the open app.",
+            "Fixed Auto light/dark mode not switching when your tablet wakes from sleep.",
+            "Fixed the quick action button waking your tablet or opening Note Overlay from sleep; wake your tablet first to use it.",
+            "Fixed Home showing the app list you left open when you come back to it.",
+            "Fixed a removed clock module not being addable back to the sidebar.",
+            "Fixed a Clear sidebar not staying clear in dark mode.",
+            "Fixed Setup's Wi-Fi step not recognizing the network you're already on.",
+            "Fixed pressing the power button during the tutorial putting your tablet to sleep."
+          ]
+        }
+      ]
+    },
     {
       "version": "1.0.18-alpha.10.17",
       "date": "2026-10-19",
