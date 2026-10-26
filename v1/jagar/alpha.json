@@ -64,7 +64,7 @@
             "Fixed a palm resting on the bottom edge opening the taskbar or switching apps while you write.",
             "Fixed swiping up from the bottom edge to open the taskbar scrolling the open app.",
             "Fixed Auto light/dark mode not switching when your tablet wakes from sleep.",
-            "Fixed the orange button waking your tablet or opening Note Overlay from sleep; wake your tablet first to use it, for example to take a snip.",
+            "Fixed the quick action button waking your tablet or opening Note Overlay from sleep; wake your tablet first to use it.",
             "Fixed Home showing the app list you left open when you come back to it.",
             "Fixed a removed clock module not being addable back to the sidebar.",
             "Fixed a Clear sidebar not staying clear in dark mode.",
