@@ -6,8 +6,52 @@
   "updatedAt": "2026-10-26",
   "releases": [
     {
-      "version": "1.0.18-alpha.10.22",
+      "version": "1.0.18-alpha.10.23",
       "date": "2026-10-26",
+      "sections": [
+        {
+          "type": "important",
+          "title": "Important",
+          "items": [
+            "If you had split screen turned off or the Space Grotesk font chosen in Home, this update turns split screen back on and switches the font to Original once; you can change both again under Customization in Home."
+          ]
+        },
+        {
+          "type": "new",
+          "title": "What's New",
+          "items": [
+            "Set your own photo as the wallpaper with Choose photo or video under Customization in Home.",
+            "Open the tutorial's lessons straight from the new Tutorial app in your app list."
+          ]
+        },
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "Double-press the power button while your tablet is awake, including on the lock screen, to open Kindle, as you can from sleep; a single press now puts your tablet to sleep after a brief pause.",
+            "See your taskbar apps lined up on the right.",
+            "Close taskbar apps one after another with a quick flick up, without a pause in between.",
+            "Keep the taskbar open, with Home behind it, when you close the app you were using.",
+            "See Settings in dark colors when dark mode is on."
+          ]
+        },
+        {
+          "type": "fixes",
+          "title": "Bug Fixes",
+          "items": [
+            "Fixed your tablet sometimes restarting while you write with the pen, for example in Noteshelf.",
+            "Fixed included apps such as Chrome, Classroom and Kindle coming back after a restart or update once you had removed them.",
+            "Fixed Software Update closing unexpectedly in split screen.",
+            "Fixed the orange button waking your tablet from sleep without opening anything; it now leaves your tablet asleep.",
+            "Fixed the clock and date not using the font you chose under Customization in Home.",
+            "Fixed Home still showing its app list when you come back to it after opening an app."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.0.18-alpha.10.22",
+      "date": "2026-10-23",
       "sections": [
         {
           "type": "new",
