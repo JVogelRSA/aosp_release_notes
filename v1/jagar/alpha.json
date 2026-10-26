@@ -56,7 +56,6 @@
           "title": "Bug Fixes",
           "items": [
             "Fixed a palm rejection bug that could cause occasional crashes while writing with the pen.",
-            "Fixed file transfer stopping, and the USB message reappearing, while Daylight Link runs on a connected computer.",
             "Fixed Settings closing when you open contactless payments.",
             "Fixed Software Update closing when you open it in split screen.",
             "Fixed Release Notes not opening from Software Update.",
