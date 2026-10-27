@@ -4,7 +4,8 @@ You'll be handed **raw notes** for one or more SolOS builds: commit logs, Jira o
 exports, Slack threads, an engineering changelog, or a JSON draft like an earlier
 `jagar_release.json`. Your job is to turn them into **customer-facing** entries in
 `v1/<device>/<channel>.json`. Software Updater shows these to customers, and merging to `main`
-publishes them within minutes, because this repo is public.
+publishes them within minutes, because this repo is public. The raw notes may come with
+**request counts**: how many customers asked for each change. They set the order of the items.
 
 The file format is defined once, in `schema/release-notes.v1.schema.json`. `README.md` explains
 how the app reads it. Read both before your first edit, and follow the existing entries in
@@ -32,10 +33,14 @@ how the app reads it. Read both before your first edit, and follow the existing 
 3. **Rewrite the kept items.** Follow [Writing items](#writing-items). Done when each item is
    one sentence a customer understands without knowing the codebase.
 
-4. **Edit the file.**
+4. **Order the items.** Follow [Ordering items](#ordering-items). Done when What's New and
+   Improvements are in request-count order, or in the person's order when there are no counts.
+
+5. **Edit the file.**
    - Add each new release at its position by version: newest first, so a new build usually
      goes at the top.
    - Include only sections that have items, in the order important, new, improvements, fixes.
+     Inside each section, keep the order from step 4.
    - Set the release `date` (YYYY-MM-DD) to the day the build was offered to devices. Use the
      date from the raw notes. A missing year can come from the OTA file name, which starts with
      the build date (`20261016.0912…`). With no date at all, ask.
@@ -44,19 +49,21 @@ how the app reads it. Read both before your first edit, and follow the existing 
      Never add a second entry for the same version.
    - Done when the file contains every kept item, and the only other change is `updatedAt`.
 
-5. **Validate.** Run `scripts/validate.py`. Done when it prints `OK`. Fix every error it
+6. **Validate.** Run `scripts/validate.py`. Done when it prints `OK`. Fix every error it
    reports rather than working around the check.
 
-6. **Report back for review.** A person approves every change before it's merged. Give them:
+7. **Report back for review.** A person approves every change before it's merged. Give them:
    - the versions you added or changed;
    - every **dropped** item, with a one-line reason each;
    - every judgement call: an item you weren't sure was customer-facing, merged items, a
      section you weren't sure about, a date or version you inferred, a number you left out;
    - every **future behaviour** item you held back, so they can decide whether customers need
-     a heads-up now.
+     a heads-up now;
+   - the order you used: each What's New and Improvements item with its request count, and
+     every item that had no count.
 
-   Commit and push only when they ask. The repo is public, so the raw notes stay out of it: keep
-   them in chat or under `drafts/`, which git ignores.
+   Commit and push only when they ask. The repo is public, so the raw notes and the request
+   counts stay out of it: keep them in chat or under `drafts/`, which git ignores.
 
 ## Sorting items
 
@@ -104,6 +111,33 @@ once and report the follow-ups as merged into it.
   testing, and report any you left out.
 - **Keep a release `title` out** unless the raw notes give a real headline for that build.
   The app already shows "SolOS <version>" as the heading.
+
+## Ordering items
+
+Customers read from the top, so the changes that the most customers asked for go first.
+
+- **Sections** keep their fixed order: Important, What's New, Improvements, Bug Fixes.
+  Important always comes first.
+- **What's New and Improvements:** put the items in order of how many customers asked for the
+  change, most first.
+- **Where the counts come from:** the person gives you the request counts with the raw notes,
+  in the chat or in a file under `drafts/`, one number per item (for example `6 Add websites
+  to Home screen`). Each number is how many different customers asked for that change or
+  reported that problem, taken from Daylight's feedback tracker. When one item covers several
+  tracker entries, the person adds them up. Use the numbers you're given: don't estimate
+  counts yourself.
+- **Ties** keep the order of the raw notes.
+- **Items with no count** go after the counted items in their section, in the order of the
+  raw notes.
+- **Experimental items** go last in their section, whatever their count.
+- **No counts at all:** keep the person's order, from their draft or the raw notes. If the raw
+  notes have no order of their own, such as a commit log, put the changes most customers will
+  notice first. Either way, say in your report that the order isn't based on counts.
+- **A person's order wins.** When the reviewer moves items after seeing the counts, keep their
+  order.
+- **Bug Fixes** keep the order of the raw notes.
+- **Counts stay private.** Never put a count, a customer's name or a tracker or ticket number
+  in the file, a commit message or a pull request. They go in your report only.
 
 ## Adding a device or channel
 
