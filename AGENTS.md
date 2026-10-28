@@ -5,7 +5,8 @@ exports, Slack threads, an engineering changelog, or a JSON draft like an earlie
 `jagar_release.json`. Your job is to turn them into **customer-facing** entries in
 `v1/<device>/<channel>.json`. Software Updater shows these to customers, and merging to `main`
 publishes them within minutes, because this repo is public. The raw notes may come with
-**request counts**: how many customers asked for each change. They set the order of the items.
+what testers said in the alpha testers' Telegram group, and with counts from Daylight's feedback
+tracker. They set the order of the items.
 
 The file format is defined once, in `schema/release-notes.v1.schema.json`. `README.md` explains
 how the app reads it. Read both before your first edit, and follow the existing entries in
@@ -33,8 +34,9 @@ how the app reads it. Read both before your first edit, and follow the existing 
 3. **Rewrite the kept items.** Follow [Writing items](#writing-items). Done when each item is
    one sentence a customer understands without knowing the codebase.
 
-4. **Order the items.** Follow [Ordering items](#ordering-items). Done when What's New and
-   Improvements are in request-count order, or in the person's order when there are no counts.
+4. **Order the items.** Follow [Ordering items](#ordering-items). Done when What's New,
+   Improvements and Bug Fixes are in count order, and every item you moved away from that order
+   has a reason.
 
 5. **Edit the file.**
    - Add each new release at its position by version: newest first, so a new build usually
@@ -59,11 +61,13 @@ how the app reads it. Read both before your first edit, and follow the existing 
      section you weren't sure about, a date or version you inferred, a number you left out;
    - every **future behaviour** item you held back, so they can decide whether customers need
      a heads-up now;
-   - the order you used: each What's New and Improvements item with its request count, and
-     every item that had no count.
+   - the order you used: each What's New, Improvements and Bug Fixes item with its Telegram
+     count and its tracker count, every item that had neither, and every item you moved in the
+     screen, with a one-line reason.
 
-   Commit and push only when they ask. The repo is public, so the raw notes and the request
-   counts stay out of it: keep them in chat or under `drafts/`, which git ignores.
+   Commit and push only when they ask. The repo is public, so the raw notes, the counts and
+   anything from the Telegram group stay out of it: keep them in chat or under `drafts/`, which
+   git ignores.
 
 ## Sorting items
 
@@ -114,30 +118,41 @@ once and report the follow-ups as merged into it.
 
 ## Ordering items
 
-Customers read from the top, so the changes that the most customers asked for go first.
+Customers read from the top, so the changes that the most testers asked for, or complained
+about, go first.
 
 - **Sections** keep their fixed order: Important, What's New, Improvements, Bug Fixes.
-  Important always comes first.
-- **What's New and Improvements:** put the items in order of how many customers asked for the
-  change, most first.
-- **Where the counts come from:** the person gives you the request counts with the raw notes,
-  in the chat or in a file under `drafts/`, one number per item (for example `6 Add websites
-  to Home screen`). Each number is how many different customers asked for that change or
-  reported that problem, taken from Daylight's feedback tracker. When one item covers several
-  tracker entries, the person adds them up. Use the numbers you're given: don't estimate
-  counts yourself.
-- **Ties** keep the order of the raw notes.
-- **Items with no count** go after the counted items in their section, in the order of the
-  raw notes.
+  Important always comes first, in the order of the raw notes.
+- **What's New, Improvements and Bug Fixes:** order the items in three passes.
+  1. **Telegram count.** For each item, count how many different testers in the alpha testers'
+     Telegram group asked for the change, or complained about the problem it fixes. Daylight
+     staff don't count. A tester counts once per item, however often they posted about it.
+     Most first.
+  2. **Tracker count, when Telegram has nothing.** For an item no tester raised on Telegram,
+     use Daylight's feedback tracker: how many different customers its matching entries list.
+     These items go after every item with a Telegram count, most first. The tracker count also
+     breaks ties between items with the same Telegram count. Items with neither count go last,
+     in the order of the raw notes.
+  3. **Screen for customer impact.** Read the counted order once more and move an item only
+     when its count clearly misleads. A change every tester meets at once (on Home, in an app
+     everyone uses, or when they update), or a fix for lost data, can move above items with a
+     similar count; a niche item with a high count can move down. Report every move with a
+     one-line reason. With no better reason, keep the counted order.
+- **Where the counts come from:** with the raw notes, the person gives you the Telegram group's
+  messages (an export or a summary of quotes) and the tracker counts, in the chat or in files
+  under `drafts/`. Count Telegram yourself from what they give you: read every message that
+  might be about the item, not only keyword matches, and leave out messages about something
+  else. Never estimate a count you have no source for.
 - **Experimental items** go last in their section, whatever their count.
-- **No counts at all:** keep the person's order, from their draft or the raw notes. If the raw
-  notes have no order of their own, such as a commit log, put the changes most customers will
-  notice first. Either way, say in your report that the order isn't based on counts.
-- **A person's order wins.** When the reviewer moves items after seeing the counts, keep their
+- **No counts at all:** the screen alone sets the order: start from the raw notes' order and
+  put the changes most customers will notice first. Say in your report that the order isn't
+  based on counts.
+- **Review before merge.** The two people who own the release notes (product and release)
+  check the order in the pull request before it's merged. When they move items, keep their
   order.
-- **Bug Fixes** keep the order of the raw notes.
-- **Counts stay private.** Never put a count, a customer's name or a tracker or ticket number
-  in the file, a commit message or a pull request. They go in your report only.
+- **Counts stay private.** Never put a count, a tester's or customer's name, a quote or a link
+  from the Telegram group or its summary, or a tracker or ticket number in the file, a commit
+  message or a pull request. They go in your report only.
 
 ## Adding a device or channel
 
