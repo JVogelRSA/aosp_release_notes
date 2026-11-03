@@ -3,8 +3,94 @@
   "product": "SolOS",
   "device": "jagar",
   "channel": "alpha",
-  "updatedAt": "2026-10-26",
+  "updatedAt": "2026-11-02",
   "releases": [
+    {
+      "version": "1.0.18-alpha.10.26",
+      "date": "2026-11-02",
+      "sections": [
+        {
+          "type": "new",
+          "title": "What's New",
+          "items": [
+            "Note Overlay is rebuilt and comes built in with this update; see the Note Overlay section below.",
+            "Bug report in the power menu: describe a problem in writing or out loud, and your tablet captures its logs and a screenshot for you to share.",
+            "Low battery card: at 20%, 10% and 5% battery, a card at the bottom of the screen warns you over whatever app is open, in place of the old low battery notification.",
+            "Update card for built-in apps: Home and the other built-in apps no longer update during setup or while you're using them; a card on Home lets you choose Update now or Tonight.",
+            "Lock screen photo: in Customization > Wallpaper, under Wallpaper on lock screen, choose Own photo to use a different photo from your Home screen.",
+            "Shrink to fit: turn on Customization > Style > Sidebar > Shrink to fit so that, with more than seven apps, the sidebar's apps and clock get smaller to fit instead of scrolling.",
+            "Keep apps level: turn on Customization > Style > App list > Keep apps level so the apps stay level while you scrub the letters, instead of sliding down beside your finger near Z."
+          ]
+        },
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "See your battery percentage in the status bar; it's now on by default.",
+            "Private DNS is back in Settings.",
+            "The power menu, the volume panel and the Wi-Fi panel have a new design.",
+            "Search in Settings has a new design in the SolOS style.",
+            "See your tablet's serial number right below its name in Settings > About tablet.",
+            "Customization and Key Mapper are now in your app list, so you can open them from there or add them to the sidebar.",
+            "Holding a sidebar app and letting go now shows Move apps at the top of its sheet, so you can drag it to a new place.",
+            "The entry above A on the letter rail, which opens all your apps, is now three lines instead of a small dot, so it's easier to find.",
+            "An app that is updating shows dimmed with its progress, and tapping it tells you it's updating instead of doing nothing.",
+            "Interrupted app updates from the Store now finish on their own, and automatic updates no longer show install pop-ups.",
+            "Swiping up from the bottom edge reacts straight away.",
+            "Hardware buttons react faster to a single press, so a double press now needs two quicker presses.",
+            "Software Update's message just before an update restart now names the SolOS version being installed."
+          ]
+        },
+        {
+          "type": "fixes",
+          "title": "Bug Fixes",
+          "items": [
+            "Fixed your tablet switching back to SolOS Home after you choose another Home app, such as Niagara, in Settings.",
+            "Fixed the AI overlay's Ask Anything explainer being hard to read in dark mode.",
+            "Fixed the status bar icons being hard to see in Software Update when dark mode is on.",
+            "Fixed the Swipe and None screen lock options not sticking; swiping to unlock now fades into Home or the app you were using.",
+            "Fixed swipes near the top of an app pulling down Quick Settings instead; the pull-down area is now smaller.",
+            "Fixed a resting palm opening menus or the taskbar while your pen hovers just above the screen.",
+            "Fixed the lock screen not keeping your own wallpaper.",
+            "Fixed the taskbar not opening when you swipe for it right after closing it over Home, and a tap above it then opening your last app instead of Home.",
+            "Fixed the tutorial leaving your screen very dim after its warm light steps; the brightness now returns to your own level.",
+            "Fixed Home replaying its start-up animation after you change the display size, dark mode or bold text."
+          ]
+        },
+        {
+          "type": "note_overlay",
+          "title": "Note Overlay",
+          "items": [
+            "Note Overlay is rebuilt and comes built in with this update: a new pad, library and notebook store, made as separate parts so it is more stable and ready for more features.",
+            "The first time it opens, your notebooks come over, so let it finish.",
+            "If a notebook seems missing, restart the tablet; please don't clear the app's storage.",
+            "There is no Google Drive backup in this version, so your notes stay on the tablet.",
+            "Import your Glassnote notebooks from the ⋯ menu > Import notebooks from Glassnote (shown while Glassnote or its backup files are on the tablet) or from Settings > Backups > Restore from a backup; infinite-canvas notebooks come over as ordinary pages.",
+            "A selected snip has its own ⋯ menu, opened with a finger tap, with Duplicate, Copy, Cut, Paste, Delete and a 90° turn, and ⋯ > Add image puts a picture on the page as a snip you can move, resize and turn.",
+            "A two-finger spread now zooms to 2.5× instead of 4×; set your own level in Settings > Writing > Zoom-in level, from 1.5× to 4×.",
+            "Also new: a quiet pencil sound you can turn on in Settings > Writing, a choice of what the stylus button does under ⋯ > Choose stylus button, the page keeping its shape and your place when you turn the tablet, and a shorter tour at ⋯ > Replay onboarding."
+          ]
+        },
+        {
+          "type": "known_issues",
+          "title": "Known Issues",
+          "items": [
+            "While your tablet captures a bug report, its progress card can cover the app you're using for about three minutes, and its percentage can stall before jumping ahead.",
+            "Right after this update, Google Meet may not open the first time you tap it; tap it again.",
+            "The Store may not update your apps until you open it, so open the Store from time to time to get app updates.",
+            "Settings > Display can show Brightness and Amber percentages that don't match the Quick Settings sliders."
+          ]
+        },
+        {
+          "type": "report_bugs",
+          "title": "Reporting Bugs",
+          "items": [
+            "Hold the power button, tap Bug report, type what went wrong or hold the mic to record a voice note, then tap Capture.",
+            "When “Bug report ready” appears, tap it to share the report, which includes your tablet's logs and a screenshot."
+          ]
+        }
+      ]
+    },
     {
       "version": "1.0.18-alpha.10.23",
       "date": "2026-10-26",
