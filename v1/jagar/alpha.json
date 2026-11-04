@@ -3,7 +3,7 @@
   "product": "SolOS",
   "device": "jagar",
   "channel": "alpha",
-  "updatedAt": "2026-11-02",
+  "updatedAt": "2026-11-04",
   "releases": [
     {
       "version": "1.0.18-alpha.10.26",
@@ -15,7 +15,8 @@
           "items": [
             "Note Overlay is rebuilt and comes built in with this update; see the Note Overlay section below.",
             "Bug report in the power menu: describe a problem in writing or out loud, and your tablet captures its logs and a screenshot for you to share.",
-            "Low battery card: at 20%, 10% and 5% battery, a card at the bottom of the screen warns you over whatever app is open, in place of the old low battery notification.",
+            "Ask the AI overlay how to do something on your tablet: it answers with the DC-1's real menus and steps.",
+            "Low battery pop-up: at 20%, 10% and 5% battery, a pop-up at the bottom of the screen warns you over whatever app is open, in place of the old low battery notification.",
             "Update card for built-in apps: Home and the other built-in apps no longer update during setup or while you're using them; a card on Home lets you choose Update now or Tonight.",
             "Lock screen photo: in Customization > Wallpaper, under Wallpaper on lock screen, choose Own photo to use a different photo from your Home screen.",
             "Shrink to fit: turn on Customization > Style > Sidebar > Shrink to fit so that, with more than seven apps, the sidebar's apps and clock get smaller to fit instead of scrolling.",
@@ -36,7 +37,7 @@
             "The entry above A on the letter rail, which opens all your apps, is now three lines instead of a small dot, so it's easier to find.",
             "An app that is updating shows dimmed with its progress, and tapping it tells you it's updating instead of doing nothing.",
             "Interrupted app updates from the Store now finish on their own, and automatic updates no longer show install pop-ups.",
-            "Swiping up from the bottom edge reacts straight away.",
+            "Swiping up from the bottom edge reacts straight away: a soft fade rises with your finger, a quick swipe carries on to Home, and holding the drag turns the fade into the taskbar.",
             "Hardware buttons react faster to a single press, so a double press now needs two quicker presses.",
             "Software Update's message just before an update restart now names the SolOS version being installed."
           ]
@@ -53,6 +54,8 @@
             "Fixed a resting palm opening menus or the taskbar while your pen hovers just above the screen.",
             "Fixed the lock screen not keeping your own wallpaper.",
             "Fixed the taskbar not opening when you swipe for it right after closing it over Home, and a tap above it then opening your last app instead of Home.",
+            "Fixed the taskbar flashing back for a moment after you tap above it to close it, and a black flash when going Home from the taskbar over Home.",
+            "Fixed Google Meet not finding a USB camera the first time it opens.",
             "Fixed the tutorial leaving your screen very dim after its warm light steps; the brightness now returns to your own level.",
             "Fixed Home replaying its start-up animation after you change the display size, dark mode or bold text."
           ]
@@ -62,13 +65,72 @@
           "title": "Note Overlay",
           "items": [
             "Note Overlay is rebuilt and comes built in with this update: a new pad, library and notebook store, made as separate parts so it is more stable and ready for more features.",
+            "So much of it is new that you may find a few rough edges; please send us a bug report when you do.",
             "The first time it opens, your notebooks come over, so let it finish.",
             "If a notebook seems missing, restart the tablet; please don't clear the app's storage.",
             "There is no Google Drive backup in this version, so your notes stay on the tablet.",
+            "Import your Noteshelf notebooks from the ⋯ menu > Import notebooks from Noteshelf, shown while Noteshelf is on the tablet.",
             "Import your Glassnote notebooks from the ⋯ menu > Import notebooks from Glassnote (shown while Glassnote or its backup files are on the tablet) or from Settings > Backups > Restore from a backup; infinite-canvas notebooks come over as ordinary pages.",
-            "A selected snip has its own ⋯ menu, opened with a finger tap, with Duplicate, Copy, Cut, Paste, Delete and a 90° turn, and ⋯ > Add image puts a picture on the page as a snip you can move, resize and turn.",
-            "A two-finger spread now zooms to 2.5× instead of 4×; set your own level in Settings > Writing > Zoom-in level, from 1.5× to 4×.",
-            "Also new: a quiet pencil sound you can turn on in Settings > Writing, a choice of what the stylus button does under ⋯ > Choose stylus button, the page keeping its shape and your place when you turn the tablet, and a shorter tour at ⋯ > Replay onboarding."
+            "A selected snip has its own ⋯ menu, opened with a finger tap, with Duplicate, Copy, Cut, Paste, Delete and a 90° turn.",
+            "Hold a selected snip with a finger for a moment, then drag, to pull off a copy.",
+            "⋯ > Add image puts a picture or screenshot on the page as a snip you can move, resize and turn.",
+            "A two-finger spread now zooms to 2.5× instead of 4×; set your own level in Settings > Writing > Zoom-in level, from 1.5× to 4×, or switch Zoom to Continuous so the page follows your fingers and stays where you let go.",
+            "Turning the tablet keeps the page's shape and your place, with no stretching.",
+            "Turn on a quiet pencil sound while you write in Settings > Writing; it plays at media volume.",
+            "Choose what the stylus button does under ⋯ > Choose stylus button: Highlighter, Eraser, Lasso, Thick pen, Snip or Nothing; it stays Highlighter unless you change it.",
+            "A level highlight snaps straight onto the line; turn this off in Settings > Writing.",
+            "Exported PDFs leave out blank pages at the end; turn this off in Settings > Notebooks.",
+            "Note Overlay's Settings is now one screen with seven topics.",
+            "A new, shorter tour: Ray shows each step, then you try it; replay it at ⋯ > Replay onboarding."
+          ]
+        },
+        {
+          "type": "note_overlay_improvements",
+          "title": "Note Overlay Improvements",
+          "items": [
+            "Your Archive is easier to reach: tap the notebook's name, and the pop-up has an Archive button above Close.",
+            "Zooming in and out is quicker.",
+            "Zooming out no longer slides the page sideways.",
+            "A selected snip moves the moment you drag it, with no hold first.",
+            "To scroll past a selected snip, start beside it or tap off it first.",
+            "A snip that hangs onto the next page can be tapped there.",
+            "A snip dropped after a long drag lands on the page under it.",
+            "When zoomed in, you can pinch snips smaller.",
+            "Paste lands where your pen or finger last touched, where you can see it, and a second paste steps past the first.",
+            "The lone Paste button has a close box.",
+            "Hold still at the end of a highlight to straighten it, as with the pen.",
+            "The highlighter's outline is softer.",
+            "Ink comes out at full width straight away, with no thin, swelling end.",
+            "The pen starts on the second size unless you already chose one.",
+            "A resting palm or finger is ignored the whole time the pen is down.",
+            "The eraser shows a thin ring of what it will take, and takes what it visibly crosses.",
+            "Lifting the pen no longer leaves a flick of extra ink.",
+            "The glass starts a little stronger if you never adjusted it (93%, or 90% in dark mode); for the old look, turn on Settings > Look > See more of the app underneath.",
+            "Glass is one setting for every notebook, so switching notebooks keeps the glass you last chose.",
+            "A flick after passing a scroll from one finger to another throws at the right speed.",
+            "A finger that starts between pages scrolls properly.",
+            "Scrolling past the end leaves one spare blank page, not two.",
+            "Back closes the open card or panel first, instead of closing the notebook.",
+            "On the lock screen the toolbar stays in view, with locked tools grayed out.",
+            "Big backups restore, including ones full of pictures.",
+            "Note Overlay no longer shows an accessibility warning or a “displaying over other apps” notice.",
+            "In dark mode the snip screen dims more, so it's clear you're snipping.",
+            "A new section or project scrolls into view and is briefly marked.",
+            "If a new notebook can't be created, Settings says why."
+          ]
+        },
+        {
+          "type": "note_overlay_fixes",
+          "title": "Note Overlay Bug Fixes",
+          "items": [
+            "Fixed many edge-case bugs of the old version, including crashes and ink floating out of place.",
+            "Fixed Delete this page needing more than one tap; “Page deleted · Undo” now lets you take it back.",
+            "Fixed the Paste button popping up on its own after you tap to end a selection.",
+            "Fixed a shaky pen lift throwing you out of snipping; a deliberate tap still leaves.",
+            "Fixed a second press of the top button on the lock screen not hiding your notes again, in both lock modes.",
+            "Fixed the stylus button not erasing in Noteshelf.",
+            "Fixed the notebook library not responding to finger taps, only to the pen.",
+            "Fixed a Glassnote file with no readable handwriting making a long blank notebook; it's now refused with a message."
           ]
         },
         {
@@ -78,7 +140,8 @@
             "While your tablet captures a bug report, its progress card can cover the app you're using for about three minutes, and its percentage can stall before jumping ahead.",
             "Right after this update, Google Meet may not open the first time you tap it; tap it again.",
             "The Store may not update your apps until you open it, so open the Store from time to time to get app updates.",
-            "Settings > Display can show Brightness and Amber percentages that don't match the Quick Settings sliders."
+            "If you ever chose a lock screen wallpaper in Android's own wallpaper settings, choosing Own photo in Customization won't show on the lock screen; that wallpaper stays.",
+            "Release Notes can open on an older release right after a newer one comes out; scroll up to see the newest."
           ]
         },
         {
