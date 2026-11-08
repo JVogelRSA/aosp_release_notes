@@ -3,8 +3,118 @@
   "product": "SolOS",
   "device": "jagar",
   "channel": "alpha",
-  "updatedAt": "2026-11-04",
+  "updatedAt": "2026-11-08",
   "releases": [
+    {
+      "version": "1.0.18-alpha.10.28",
+      "date": "2026-11-09",
+      "sections": [
+        {
+          "type": "important",
+          "title": "Important",
+          "items": [
+            "Developer options and USB debugging are now on, so you can connect your own computer to your tablet over USB; if you had turned either of them off before, it stays off.",
+            "When you plug your tablet into a computer, it asks “Allow USB debugging?”; only tap Allow for a computer you own, because a computer you allow gets full control of your tablet, can keep connecting over Wi-Fi, and can replace its software.",
+            "“Always allow from this computer” starts unticked: tick it only on your own computer.",
+            "To turn off USB debugging, go to Settings > System > Developer options and switch off USB debugging; leave the switch at the top of Developer options on, because turning that off also resets your tablet's animation speed and screen refresh settings."
+          ]
+        },
+        {
+          "type": "new",
+          "title": "What's New",
+          "items": [
+            "On the Daylight sign-in screen, tap “Forgot password?” and we'll email you a link to choose a new password.",
+            "If you had a Daylight account before the new sign-in, tap “Have an old Daylight account? Bring it over” on the sign-in screen, and we'll email you a link to choose a password for it.",
+            "When an app you're using has an update ready, a notification such as “Note Overlay update ready” lets you tap Update now, or Tonight to install it the next time your screen turns off.",
+            "Update reminders: until you install an update, its Update available notification comes back about once an hour, and after you clear it four times it stays away until the next update.",
+            "While a computer is connected to your tablet by wireless debugging, mission control shows Wireless debugging connected; tap it to turn wireless debugging off.",
+            "After an update, the “Woohoo!” message has a What's new button that opens the release notes."
+          ]
+        },
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "Software Update shows your build number, such as 10.28, in big type at the top, with your tablet's serial number beside it; tap the serial number to copy it.",
+            "The Store now checks for app updates by itself while your screen is on, so you no longer need to open it, and it waits until you leave an app before updating that app.",
+            "Your tablet checks for updates when you turn on its screen, if it hasn't checked in the last hour, so a new update shows up sooner.",
+            "Closing the Update available pop-up now only closes it; to put an update off, tap Remind me later.",
+            "After you tap Remind me later, Software Update shows the update that's waiting and its version, instead of a tick.",
+            "The Update available notification now names the update in a few plain words instead of its long version number.",
+            "In Software Update's Settings, Smart Updates is now called Install updates automatically: when it's on, your tablet installs updates by itself while it's charging with the screen off, usually overnight, and when it's off, you're told about each update and install it yourself.",
+            "After installing an update by itself, your tablet waits until the screen is off to restart.",
+            "If an automatic install fails twice, Software Update stops trying and tells you instead.",
+            "An update that would erase your tablet always asks first, and never installs by itself.",
+            "Software Update's own Developer options menu is now called Diagnostics, so it isn't mixed up with Android's Developer options, and its Generate bug report no longer shows a percentage that stalls.",
+            "Tapping Bug report in the power menu opens the report form straight away.",
+            "Holding Bug report in the power menu now opens the same report form as tapping it.",
+            "The “Allow USB debugging?” message now says in plain words what a computer can do once you allow it.",
+            "Quick Settings opens with a pull from the very top edge of the screen, at any speed, like other Android tablets, and swipes that start lower reach your app.",
+            "Dragging the Brightness or Amber slider from anywhere on its bar moves it twice as far as your finger, and dragging the slider's handle follows your finger exactly.",
+            "While you pull Quick Settings down, its bottom edge shows the battery, time and date, so a short pull is enough to check the time; if you've tapped Show events in the mission control calendar, it also shows how long until your next event."
+          ]
+        },
+        {
+          "type": "fixes",
+          "title": "Bug Fixes",
+          "items": [
+            "Fixed a double press of the power button leaving the swipe lock screen up when Kindle was already open; Kindle now opens straight away, and with a PIN the tablet stays locked, so leaving Kindle asks for your PIN.",
+            "Fixed the lock screen taking a few seconds to go away when it closes without a swipe, such as after a double press of the power button; it now fades out at once.",
+            "Fixed Settings pages turning black on near-black, and hard to read, with dark mode on and the backlight off; they now stay white with black text, the Wi-Fi list too.",
+            "Fixed a tap outside the Report a bug form closing it and losing what you typed or recorded; Cancel and Back still close it.",
+            "Fixed the bug report's progress card covering your app for minutes and its percentage stalling; a short card now shows when the capture starts and when it ends, with the rest in the notification shade.",
+            "Fixed the keyboard covering the Report a bug form's mic and buttons.",
+            "Fixed Software Update closing with an error when an update was already installing in the background; it now shows that install's progress.",
+            "Fixed the month on the sidebar clock getting cut off with a larger font size or a tall font.",
+            "Fixed choosing Note Overlay for the Action button not opening the overlay.",
+            "Fixed the Tutorial app not letting you leave with the Home swipe, or with Back from its first screen."
+          ]
+        },
+        {
+          "type": "note_overlay_improvements",
+          "title": "Note Overlay Improvements",
+          "items": [
+            "A new snip shows its handles straight away, so you can move it with a finger without tapping it first."
+          ]
+        },
+        {
+          "type": "note_overlay_fixes",
+          "title": "Note Overlay Bug Fixes",
+          "items": [
+            "Fixed dragging a snip from the left edge going Back and cancelling the snip.",
+            "Fixed a swipe up from the bottom edge during a snip cancelling it; while you snip, the bottom edge now does nothing."
+          ]
+        },
+        {
+          "type": "known_issues",
+          "title": "Known Issues",
+          "items": [
+            "Some banking and payment apps may refuse to open while Developer options or USB debugging is on; if one does, turn off USB debugging as described above, and if it still refuses, switch off Developer options at the top of its page.",
+            "Wireless debugging is not on by default, and it turns itself off when your tablet restarts or its Wi-Fi drops.",
+            "In Developer options, Take bug report makes Android's own report without the form, and Bug report handler should stay on Software Update; to report a bug, use Bug report in the power menu.",
+            "Right after this update, Google Meet may not open the first time you tap it; tap it again.",
+            "Release Notes can open on an older release right after a newer one comes out; scroll up to see the newest."
+          ]
+        },
+        {
+          "type": "update_stuck",
+          "title": "If the Update Gets Stuck",
+          "items": [
+            "If your tablet restarts while this update is installing, tapping Download and install may then do nothing: wait 5 minutes, open Software Update, and if its percentage is going up, leave it to finish.",
+            "If it still does nothing, go to Settings > Apps > See all apps, tap Software Updater, then Storage & cache, Clear storage and Delete; this also resets Software Update's own settings and deletes any bug report it hasn't sent or shared yet.",
+            "Open Software Update again, wait for it to check for updates, tap Download and install and confirm; if Software Update closes by itself, wait 5 minutes and clear its storage once more."
+          ]
+        },
+        {
+          "type": "report_bugs",
+          "title": "Reporting Bugs",
+          "items": [
+            "Hold the power button, tap Bug report, type what went wrong or hold the mic to record a voice note, then tap Send.",
+            "When Bug report ready appears, tap it to share the report, which includes your tablet's logs and a screenshot; a copy also stays in your Download folder, under Bug reports."
+          ]
+        }
+      ]
+    },
     {
       "version": "1.0.18-alpha.10.26",
       "date": "2026-11-02",
