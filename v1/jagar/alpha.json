@@ -3,7 +3,7 @@
   "product": "SolOS",
   "device": "jagar",
   "channel": "alpha",
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-09",
   "releases": [
     {
       "version": "1.0.18-alpha.10.28",
@@ -35,7 +35,7 @@
           "type": "improvements",
           "title": "Improvements",
           "items": [
-            "Software Update shows your build number, such as 10.28, in big type at the top, with your tablet's serial number beside it; tap the serial number to copy it.",
+            "Software Update shows your build number, such as 10.28, in big type at the top, with your tablet's serial number in bold beside it; tap the serial number to copy it.",
             "The Store now checks for app updates by itself while your screen is on, so you no longer need to open it, and it waits until you leave an app before updating that app.",
             "Your tablet checks for updates when you turn on its screen, if it hasn't checked in the last hour, so a new update shows up sooner.",
             "Closing the Update available pop-up now only closes it; to put an update off, tap Remind me later.",
@@ -110,7 +110,8 @@
           "title": "Reporting Bugs",
           "items": [
             "Hold the power button, tap Bug report, type what went wrong or hold the mic to record a voice note, then tap Send.",
-            "When Bug report ready appears, tap it to share the report, which includes your tablet's logs and a screenshot; a copy also stays in your Download folder, under Bug reports."
+            "When it says “Sent to the Daylight team”, we have your report, with your tablet's logs and a screenshot.",
+            "If it says “Bug report ready” instead, tap it to share the report yourself; your last five reports also stay in your Download folder, under Bug reports."
           ]
         }
       ]
