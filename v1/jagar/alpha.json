@@ -15,14 +15,8 @@
           "items": [
             "Software Update has a big Check for updates button under its status card, in place of the small refresh icon at the top.",
             "The main Settings page ends with your tablet's serial number, which you can select and copy.",
-            "Hold to wake: turn on Hold to wake for the power button in Key Mapper, and a quick tap no longer wakes your tablet, so it doesn't turn on by accident in a bag; hold the button for a moment instead, and a double press still opens its app.",
-            "Dim in the dark: turn it on in Customization > Controls, and when you wake your tablet in a dark room with the light off, the light comes on at its lowest step.",
-            "Choose which six controls the quick menu shows in Customization > Controls, including Battery saver, Do Not Disturb and Location.",
-            "A quick menu app slot can now hold a web page you saved as an app.",
             "Hold the quick menu's Bluetooth tile to see your paired devices: tap one to connect or disconnect it, or tap Pair new device.",
-            "A notification bell in the top right corner of the notification sheet turns notifications on and off.",
-            "With the taskbar open over Home, Split screen opens a list of your apps: pick the top app, then the bottom one, and tap OK.",
-            "Layered motion: turn it on in Customization > Style, and going Home makes your app shrink into the taskbar, while an app you open from the taskbar rises out of it."
+            "A notification bell in the top right corner of the notification sheet turns notifications on and off."
           ]
         },
         {
