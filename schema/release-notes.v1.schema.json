@@ -31,9 +31,9 @@
       "required": ["version", "date", "sections"],
       "properties": {
         "version": {
-          "description": "ro.mediatek.version.release without the trailing -<firmware build> number, e.g. 1.0.18-alpha.10.12.",
+          "description": "ro.mediatek.version.release without the trailing -<firmware build> number, e.g. 1.0.18-alpha.10.12, or a customer build's 0.9.9.60.customer.1.",
           "type": "string",
-          "pattern": "^\\d+\\.\\d+\\.\\d+(-[0-9A-Za-z.]+)?$"
+          "pattern": "^\\d+\\.\\d+\\.\\d+(\\.\\d+)?([.-][0-9A-Za-z.]+)?$"
         },
         "date": { "type": "string", "format": "date" },
         "title": {

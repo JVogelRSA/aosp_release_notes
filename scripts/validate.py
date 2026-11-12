@@ -17,7 +17,9 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 # The only channels Software Updater reads.
 CHANNELS = {"alpha", "stable"}
-VERSION = re.compile(r"^\d+\.\d+\.\d+(-[0-9A-Za-z.]+)?$")
+# A tag build ("1.0.18-alpha.10.12") or a customer build's four-part number with its words
+# ("0.9.9.60.customer.1"); never the trailing -<firmware build> number.
+VERSION = re.compile(r"^\d+\.\d+\.\d+(\.\d+)?([.-][0-9A-Za-z.]+)?$")
 DEVICE = re.compile(r"^[a-z0-9_]+$")
 SECTION_TYPE = re.compile(r"^[a-z][a-z0-9_]*$")
 

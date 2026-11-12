@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "product": "SolOS",
+  "device": "jagar",
+  "channel": "stable",
+  "updatedAt": "2026-11-19",
+  "releases": [
+    {
+      "version": "0.9.9.60.customer.1",
+      "date": "2026-11-19",
+      "sections": [
+        {
+          "type": "new",
+          "title": "What's New",
+          "items": [
+            "A new Software Update app takes over updates: it shows your build at the top, has a Check for updates button, and in its Settings you choose whether updates install by themselves overnight while your tablet charges.",
+            "Use a USB webcam for video calls: plug one into your tablet and apps such as Google Meet and Zoom can use it.",
+            "The Daylight Store comes built in, so you can install and update Daylight apps from it.",
+            "View comes built in."
+          ]
+        },
+        {
+          "type": "improvements",
+          "title": "Improvements",
+          "items": [
+            "The screen's refresh rate now stays between 45 Hz and 90 Hz, as on Daylight's newest software, so scrolling and animations look smoother; you can still change it under Smooth display in Settings."
+          ]
+        }
+      ]
+    }
+  ]
+}
