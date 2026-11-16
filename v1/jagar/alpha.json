@@ -6,13 +6,19 @@
   "updatedAt": "2026-11-16",
   "releases": [
     {
-      "version": "1.0.18-alpha.10.31",
+      "version": "1.0.18-alpha.10.32",
       "date": "2026-11-16",
       "sections": [
         {
           "type": "new",
           "title": "What's New",
           "items": [
+            "Pen snip: hold your pen's side button and drag a box anywhere on the screen. The snip is saved in your Snips folder and its picture is copied, and a small card in the lower left lets you copy its text instead (T), mark it up, share it or delete it.",
+            "Make mode in the AI overlay: sign in to your Claude Code account to see and manage your cloud and remote sessions on claude.ai. The overlay still opens in Chat; tap Make on the Make | Chat tab, or double press the walkie-talkie button, to switch.",
+            "Hold the walkie-talkie button to talk to the AI overlay.",
+            "The taskbar shows each open app's last screen, with the app's icon in a corner, instead of just the icon.",
+            "With the taskbar open over Home, Split screen opens a list of your apps: pick the top app, then the bottom one, and tap OK. Clear all closes your open apps.",
+            "Swipe right on the sidebar to see your Note Overlay notebooks and the documents on your tablet, such as PDFs and EPUBs; tap one to open it.",
             "Pull the quick menu down a little to peek at the time and how long until your next event, such as \"33 min to Talk to Christine\"; let go and it goes back up, or keep pulling to open it.",
             "Software Update has a big Check for updates button under its status card, in place of the small refresh icon at the top.",
             "The main Settings page ends with your tablet's serial number, which you can select and copy.",
@@ -22,7 +28,9 @@
             "Light on in the dark: when you wake your tablet in a dark room with the light off, the light comes on at its lowest step. It's on by default; you can turn it off in Customization > Controls.",
             "Choose which six controls the quick menu shows in Customization > Controls, including Battery saver, Do Not Disturb and Location: the editor looks like the quick menu, and you hold a control and drag it onto another to swap them.",
             "The sidebar clock counts down to sunrise or sunset.",
-            "Layered motion: turn it on in Customization > Style, and going Home makes your app shrink into the taskbar, while an app you open from the taskbar rises out of it."
+            "Layered motion: turn it on in Customization > Style, and going Home makes your app shrink into the taskbar, while an app you open from the taskbar rises out of it.",
+            "A quick menu app slot can now hold a web page you saved as an app, and the slot's app list has Get more apps, which opens the Play Store.",
+            "Make app names bigger in Customization > Style > App names: Standard, Large or Larger."
           ]
         },
         {
@@ -34,14 +42,25 @@
             "The quick menu's Bluetooth tile shows what the connected device is, such as headphones, a keyboard or a mouse.",
             "The lock screen picks black or white text to suit your lock screen picture, so the clock and notifications stay readable on a dark photo.",
             "Mission control lists only today's meetings that are still to come or under way, so the next one is at the top.",
-            "Settings > Wallpaper now opens Customization on Wallpaper."
+            "Settings > Wallpaper now opens Customization on Wallpaper.",
+            "The quick menu's tiles and header now follow the font size you choose in Settings.",
+            "Choose which AI model answers from the + beside the AI overlay's prompt bar, or in Home's settings.",
+            "Links in the AI overlay's answers can be tapped, and holding an answer copies it.",
+            "Drag the edge of the AI overlay's chat to make it wider.",
+            "The AI overlay keeps what you typed if you close it before sending, and Stop ends an answer.",
+            "The AI overlay's microphone is on only while it listens.",
+            "In the AI overlay, your messages and the AI's answers look different, so a conversation is easier to follow.",
+            "The 24-hour lock screen clock is now called Sun & moon, and a note under the picker says how to read it.",
+            "Holding an app in Home shows how to delete it.",
+            "Web apps you install from Chrome are listed with your other apps, at the end of the list."
           ]
         },
         {
           "type": "fixes",
           "title": "Bug Fixes",
           "items": [
-            "Fixed a mouse or touchpad click near the bottom of the screen going Home instead of clicking what's under the pointer."
+            "Fixed a mouse or touchpad click near the bottom of the screen going Home instead of clicking what's under the pointer.",
+            "Fixed Key Mapper showing Nothing for the Action button's double press while two quick presses opened the Daily Note."
           ]
         }
       ]

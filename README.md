@@ -71,5 +71,6 @@ superseded by 1.0.18-alpha.10.7, and 1.0.18-alpha.8.1 by 1.0.18-alpha.8.2.
 
 Builds never offered to testers aren't listed either, even when Daylight's own tablets ran
 them; the next build the testers get covers their changes. 1.0.18-alpha.10.23 covers
-everything since 10.17 (builds 10.18 to 10.22), and 1.0.18-alpha.10.26 covers 10.24 and
-10.25.
+everything since 10.17 (builds 10.18 to 10.22), 1.0.18-alpha.10.26 covers 10.24 and
+10.25, and 1.0.18-alpha.10.32 covers 10.29 to 10.31 (10.31 was listed for a few hours on
+16 Nov 2026 and then replaced by 10.32 before any tester got it).
