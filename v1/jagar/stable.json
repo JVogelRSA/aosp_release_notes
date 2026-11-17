@@ -1,29 +1,41 @@
 {
   "schemaVersion": 1,
-  "product": "SolOS",
+  "product": "Daylight",
   "device": "jagar",
   "channel": "stable",
   "updatedAt": "2026-11-19",
   "releases": [
     {
-      "version": "0.9.9.60.customer.1",
+      "version": "0.9.9.60.customer.2",
       "date": "2026-11-19",
       "sections": [
         {
           "type": "new",
           "title": "What's New",
           "items": [
-            "A new Software Update app takes over updates: it shows your build at the top, has a Check for updates button, and in its Settings you choose whether updates install by themselves overnight while your tablet charges.",
+            "A new Software Update app takes over updates. It shows your software version at the top and has a Check for updates button. In its Settings you choose whether updates install by themselves overnight while your tablet charges.",
+            "Software Update has a new look: updates and messages now arrive as a short letter from Daylight, and when an update is ready a popup lets you know.",
             "Use a USB webcam for video calls: plug one into your tablet and apps such as Google Meet and Zoom can use it.",
             "The Daylight Store comes built in, so you can install and update Daylight apps from it.",
-            "View comes built in."
+            "View comes built in.",
+            "Daylight Metrics comes built in. It doesn't collect anything yet."
           ]
         },
         {
           "type": "improvements",
           "title": "Improvements",
           "items": [
-            "The screen's refresh rate now stays between 45 Hz and 90 Hz, as on Daylight's newest software, so scrolling and animations look smoother; you can still change it under Smooth display in Settings."
+            "When you tap Download and install, the progress shows straight away, and Software Update says Preparing until the install starts.",
+            "Kindle is updated to a newer version. If you already have Kindle, it updates in place and you stay signed in with your books kept.",
+            "The screen's refresh rate now stays between 45 Hz and 90 Hz, so scrolling and animations look smoother. You can still change it under Smooth display in Settings."
+          ]
+        },
+        {
+          "type": "fixes",
+          "title": "Fixes",
+          "items": [
+            "Fixed the update button sometimes not working after the tablet restarted.",
+            "Fixed Software Update closing unexpectedly when an update was already running."
           ]
         }
       ]
